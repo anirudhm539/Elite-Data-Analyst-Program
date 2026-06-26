@@ -65,11 +65,16 @@ An e-commerce application may have one Resource Group containing:
 
 - ## Why Companies Use Azure
 - Companies use Azure because it provides:
-
 - Scalability to handle growing workloads
+- High availability and reliability
+- Strong security features
+- Cost-effective pay-as-you-go pricing
+- Global data centers for faster performance
+- Backup and disaster recovery solutions
+- Easy integration with Microsoft products
 
-- ## A simple workflow diagram like:
-- Business Data
+ ## A simple workflow diagram like:
+Business Data
       ↓
 Azure Storage
       ↓
@@ -78,9 +83,3 @@ Database
 Power BI
       ↓
 Management Dashboard
-- High availability and reliability
-- Strong security features
-- Cost-effective pay-as-you-go pricing
-- Global data centers for faster performance
-- Backup and disaster recovery solutions
-- Easy integration with Microsoft products
