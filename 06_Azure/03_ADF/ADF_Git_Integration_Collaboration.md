@@ -1,88 +1,123 @@
 # ADF Git Integration & Collaboration
 
 ## What is Git Integration
-
-ADF ko GitHub ya Azure Repos se connect karna Git Integration kehlata hai. Isse version control aur team collaboration possible hota hai.
+ADF can be connected to Git repositories such as GitHub or Azure Repos for version control and team collaboration.
 
 ## Why Companies Use Git with ADF
-
-* Version Control
-* Team Collaboration
-* Change Tracking
-* Code Reviews
-* Rollback Support
-* Safe Production Deployments
+Version Control
+Team Collaboration
+Code Reviews
+Rollback Support
+CI/CD Integration
+Audit Trail
 
 ## ADF Git Architecture
 
-Developer
-↓
+ADF Studio
+    ↓
+Git Repository
+    ↓
 Feature Branch
-↓
+    ↓
 Pull Request
-↓
-Code Review
-↓
+    ↓
 Main Branch
-↓
+    ↓
 Publish
-↓
-Production
+    ↓
+Deployment
 
 ## Feature Branch Workflow
 
-1. Create Feature Branch
-2. Develop Pipelines
-3. Commit Changes
-4. Push Branch
-5. Create Pull Request
-6. Review & Approve
-7. Merge to Main
-8. Publish to Production
+Create Feature Branch
+    ↓
+Develop Pipeline
+    ↓
+Commit Changes
+    ↓
+Push Branch
+    ↓
+Create Pull Request
+    ↓
+Review
+    ↓
+Merge
 
 ## Pull Requests
 
-Pull Request (PR) branch changes ko merge karne ki request hoti hai. Iske through code review aur approval hota hai.
+Used for:
+- Code Review
+- Approval Process
+- Quality Checks
+- Governance
 
 ## Code Reviews
 
-Code Reviews ensure:
-
-* Best Practices
-* Security
-* Performance
-* Standardization
-* Quality Control
+Check:
+- Naming Standards
+- Security Practices
+- Performance Optimization
+- Reusability
+- Documentation
 
 ## Rollback Strategy
 
-Agar deployment fail ho jaye to previous stable Git commit restore karke system ko normal state mein laya jata hai.
+Stable Commit
+    ↓
+New Changes
+    ↓
+Issue Found
+    ↓
+Rollback to Previous Commit
 
 ## Enterprise Branch Structure
 
-* main → Production Code
-* develop → Testing/Integration
-* feature/* → New Features
-* hotfix/* → Urgent Fixes
+main
+Production
+
+develop
+Testing
+
+feature/*
+Development
+
+Example:
+
+main
+
+develop
+
+feature/sales-pipeline
+
+feature/customer-etl
+
+feature/watermark-load
 
 ## Interview Notes
 
-### Why Git Integration is important in ADF?
+Q. Why integrate ADF with Git?
+A. Version control, collaboration, rollback, code review, and CI/CD support.
 
-Version control, collaboration, code review aur rollback support provide karta hai.
+Q. Which repositories can ADF connect to?
+A. GitHub and Azure Repos.
 
-### What is a Feature Branch?
+Q. What is a feature branch?
+A. An isolated branch used for development work before merging into the main branch.
 
-Specific feature development ke liye banayi gayi separate branch.
+Q. What is a Pull Request?
+A. A review and approval mechanism before code is merged.
 
-### What is a Pull Request?
+Q. Why is rollback important?
+A. It allows quick recovery from failed deployments.
 
-Branch changes ko merge karne ke liye approval request.
+## What Comes Next
 
-### What is Rollback?
+2.21 Enterprise Logging & Audit Strategy
 
-Previous stable version par wapas jana.
+2.22 ADF Monitoring Dashboard Design
 
-### Why do companies use Code Reviews?
+2.23 ADF Cost Optimization
 
-Code quality, security aur standards maintain karne ke liye.
+2.24 ADF Production Support Model
+
+2.25 End-to-End Enterprise Data Pipeline Case Study
